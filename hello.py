@@ -1,12 +1,27 @@
 #variables
-miNombre = "Luis \nEduardo";
-miApellido = "Jimenez Robles";
-misAnos = 22;
-miPeso = 105.5;
+miNombre = "Luis Eduardo"
+miApellido = "Jimenez Robles"
+misAnos = 22
+miPeso = 105.5
+todoJunto = "Hola mi nombre es {} tengo {} y peso {}"
+lista = (1, 2, 3, 4)
+miArreglo = [11, 22, 33, 44, 55]
 
 #prints
-print("Hola Mundo!");
-print(miNombre+" "+miApellido);
-print(type(miNombre));
-print(type(misAnos),misAnos);
-print(type(miPeso),miPeso);
+print("Hola Mundo!")
+print(miNombre + " " + miApellido)
+print(type(miNombre))
+print(type(misAnos), misAnos)
+print(type(miPeso), miPeso)
+
+#format concatena variables a una cadena
+print(todoJunto.format(miNombre, miApellido, misAnos, miPeso))
+
+print("Imprimiendo lista:", lista)
+
+#agregando valor a mi arreglo
+miArreglo.append(99)
+print("Imprimiendo mi arreglo con nuevo valor: ", miArreglo)
+
+#imprimiendo algo del arreglo
+print(miArreglo[0:2])
