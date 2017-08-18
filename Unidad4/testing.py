@@ -42,3 +42,12 @@ for int in lista:
 	else:
 		print(int)
 print("terminó")
+
+#for else
+for num in lista:
+	if num == 9:
+		break
+	else:
+		print(num)
+else:
+	print("default")
