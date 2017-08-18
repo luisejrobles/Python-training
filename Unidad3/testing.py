@@ -32,4 +32,8 @@ elif var1 > var2:
 else:
 	print("Son iguales")
 
-#switch statement
+#inline if
+var1, var2 = 4, 5
+result = 4 if var1 < var2 else 9
+print(result)
+
