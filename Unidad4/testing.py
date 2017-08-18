@@ -28,3 +28,9 @@ else:
 
 
 #Break, Continue, else
+lista = [1,2,3,4,5,6,7]
+for num in lista:
+	print(num)
+	if num == 5:
+		break
+print("terminó")
