@@ -34,3 +34,11 @@ for num in lista:
 	if num == 5:
 		break
 print("terminó")
+
+#Testint continue
+for int in lista:
+	if (int == 5) or (int == 4):
+		continue
+	else:
+		print(int)
+print("terminó")
