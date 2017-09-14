@@ -14,5 +14,4 @@ people2 = Person("Female","Brenda Herrera")
 people.display()
 people2.display()
 
- 
-		
+	
