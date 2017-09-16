@@ -21,3 +21,25 @@ class Dog(Animals):
 lilo = Cat()
 #Printing cat function of talking
 lilo.talk()
+
+class Asiento:
+
+	def __init__(self,material, color, textura):
+		self.material = material
+		self.color = color
+		self.textura = textura
+
+
+class Llanta:
+	def __init__(self,material, tamano, agarre):
+		self.agarre = agarre 
+		self.tamano = tamano
+		self.material = material
+
+
+class Carro(Asiento, Llanta):
+	def __init__(self, marca, color, modelo, ano):
+		self.marca = marca 
+		self.color = color
+		self.modelo = modelo
+		self.ano = ano
