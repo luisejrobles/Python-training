@@ -23,12 +23,28 @@ lilo = Cat()
 lilo.talk()
 
 class Asiento:
-
 	def __init__(self,material, color, textura):
 		self.material = material
 		self.color = color
 		self.textura = textura
 
+	def setMaterial(self,material):
+		self.material = material
+
+	def getMaterial(self,material):
+		return self.material
+
+	def setColor(self,color):
+		self.color = color
+
+	def getColor(self,color):
+		return self.color
+
+	def setTextura(self,textura):
+		self.textura = textura
+
+	def getTextura(self,textura):
+		return self.textura
 
 class Llanta:
 	def __init__(self,material, tamano, agarre):
@@ -36,10 +52,19 @@ class Llanta:
 		self.tamano = tamano
 		self.material = material
 
-
 class Carro(Asiento, Llanta):
 	def __init__(self, marca, color, modelo, ano):
 		self.marca = marca 
 		self.color = color
 		self.modelo = modelo
 		self.ano = ano
+
+	def setMarca(self,marca):
+		self.marca = marca	
+
+	def getMarca(self,marca):
+		return self.marca
+
+bmw = Carro("bmw","rojo","i5",2017)
+
+bmw.
