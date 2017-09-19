@@ -52,6 +52,24 @@ class Llanta:
 		self.tamano = tamano
 		self.material = material
 
+	def setAgarre(self,agarre):
+		self.agarre = agarre
+
+	def getAgarre(self,agarre):
+		return self.agarre
+
+	def setTamano(self,tamano):
+		self.tamano = tamano
+
+	def getTamano(self,tamano):
+		return tamano
+
+	def setMaterial(self,material):
+		self.material = material
+
+	def getMaterial(self,material):
+		return self.material
+		
 class Carro(Asiento, Llanta):
 	def __init__(self, marca, color, modelo, ano):
 		self.marca = marca 
